@@ -4,7 +4,12 @@ builds:
   - id: default
     main: ./cmd/modern-go-application/main.go   # AJUSTA A TU PROYECTO
     binary: myapp
+    env:
+      - CGO_ENABLED=0 # Muy importante para builds reproducibles (SLSA lo necesita)
     goos:
       - linux
     goarch:
       - amd64
+
+archives:
+  - format: binary
