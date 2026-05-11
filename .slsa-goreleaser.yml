@@ -1,0 +1,10 @@
+version: 2
+
+builds:
+  - id: default
+    main: ./cmd/modern-go-application/main.go   # AJUSTA A TU PROYECTO
+    binary: myapp
+    goos:
+      - linux
+    goarch:
+      - amd64
