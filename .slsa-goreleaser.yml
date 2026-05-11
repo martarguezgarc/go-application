@@ -17,7 +17,7 @@ goos: linux
 goarch: amd64
 
 # Entrypoint to compile.
-main: ./cmd/modern-go-application/main.go   # AJUSTA A TU PROYECTO
+main: ./cmd/modern-go-application   # AJUSTA A TU PROYECTO
 
 # Binary output name.
 # {{ .Os }} will be replaced by goos field in the config file.
